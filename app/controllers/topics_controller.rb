@@ -1,5 +1,5 @@
 class TopicsController < ApplicationController
-  before_action :set_topic, only: [:show, :edit, :update, :destroy]
+  before_action :set_topic, only: [:show, :edit, :update, :destroy, :about]
 
   # GET /topics
   # GET /topics.json
@@ -16,6 +16,7 @@ class TopicsController < ApplicationController
   def new
     @topic = Topic.new
   end
+
 
   # GET /topics/1/edit
   def edit
